@@ -4,11 +4,11 @@ lock '3.6.0'
 set :application, 'dic_app'
 # cloneするgitのレポジトリ
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/junichi-fujita/aws_app'
+set :repo_url, 'https://github.com/junichi-fujita/dic_app'
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, ENV['BRANCH'] || 'master'
 # deploy先のディレクトリ。
-set :deploy_to, '/var/www/aws_app'
+set :deploy_to, '/var/www/dic_app'
 # シンボリックリンクをはるフォルダ・ファイル
 set :linked_files, %w{.env config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets public/uploads}
